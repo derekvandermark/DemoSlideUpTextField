@@ -48,6 +48,7 @@ extension ViewController {
        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
            
            self.sampleView.center.y += (-1 * keyboardSize.height)
+        // constraints[2] is the constraint I added in storyboard, that dictates the sampleView's distance from the edge of the super.view.  That's the same way I did it in my actual project.  This way, I am adjusting that constant only.  The distance between the bottom of the UIView and the bottom of the View.
            view.constraints[2].constant += (-1 * keyboardSize.height)
        
        UIView.animate(withDuration: 0.5, animations: {
