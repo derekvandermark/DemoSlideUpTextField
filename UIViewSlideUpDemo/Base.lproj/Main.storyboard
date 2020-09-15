@@ -76,10 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="iRI-sC-KzK" id="3M4-yj-h9z"/>
-                        <outlet property="sampleButton" destination="IEa-Fy-1V7" id="nSl-6Y-QWN"/>
-                        <outlet property="sampleLabel" destination="UeP-23-rg1" id="diG-PZ-7Nf"/>
                         <outlet property="sampleTextField" destination="Now-Lh-cjX" id="NfZ-ta-hTh"/>
-                        <outlet property="sampleView" destination="ai5-wm-Jna" id="lPS-ld-Cpn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
