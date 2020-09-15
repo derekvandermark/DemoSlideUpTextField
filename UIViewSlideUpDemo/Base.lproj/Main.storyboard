@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,78 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewSlideUpDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ai5-wm-Jna">
+                                <rect key="frame" x="20" y="704" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeP-23-rg1">
+                                        <rect key="frame" x="8" y="8" width="224" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Eet-gy-SA1"/>
+                                            <constraint firstAttribute="width" constant="224" id="ny9-1V-3CB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Now-Lh-cjX">
+                                        <rect key="frame" x="8" y="86" width="97" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="Q38-Qk-qtl"/>
+                                            <constraint firstAttribute="height" constant="34" id="fZe-1v-XWO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEa-Fy-1V7">
+                                        <rect key="frame" x="186" y="90" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="gcP-yC-lEI"/>
+                                            <constraint firstAttribute="height" constant="30" id="xRJ-hO-Qbr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0085908717699999994" green="0.092478561560000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UeP-23-rg1" firstAttribute="leading" secondItem="ai5-wm-Jna" secondAttribute="leading" constant="8" id="1eg-7z-KmX"/>
+                                    <constraint firstAttribute="height" constant="128" id="8z6-nP-eWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Now-Lh-cjX" secondAttribute="bottom" constant="8" id="9lQ-cF-jXW"/>
+                                    <constraint firstAttribute="trailing" secondItem="UeP-23-rg1" secondAttribute="trailing" constant="8" id="Bw3-ff-CYd"/>
+                                    <constraint firstItem="UeP-23-rg1" firstAttribute="top" secondItem="ai5-wm-Jna" secondAttribute="top" constant="8" id="HvE-rX-mz2"/>
+                                    <constraint firstAttribute="width" constant="240" id="J1r-Yx-i94"/>
+                                    <constraint firstAttribute="bottom" secondItem="IEa-Fy-1V7" secondAttribute="bottom" constant="8" id="LXV-b9-5Qa"/>
+                                    <constraint firstItem="IEa-Fy-1V7" firstAttribute="leading" secondItem="Now-Lh-cjX" secondAttribute="trailing" constant="81" id="WvA-26-loA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Now-Lh-cjX" secondAttribute="trailing" constant="135" id="Xd5-t0-dyf"/>
+                                    <constraint firstItem="Now-Lh-cjX" firstAttribute="leading" secondItem="ai5-wm-Jna" secondAttribute="leading" constant="8" id="bJo-di-XQJ"/>
+                                    <constraint firstItem="Now-Lh-cjX" firstAttribute="top" secondItem="UeP-23-rg1" secondAttribute="bottom" constant="43" id="esh-hy-gyd"/>
+                                    <constraint firstAttribute="bottom" secondItem="UeP-23-rg1" secondAttribute="bottom" constant="85" id="fro-5m-N5E"/>
+                                    <constraint firstItem="IEa-Fy-1V7" firstAttribute="top" secondItem="UeP-23-rg1" secondAttribute="bottom" constant="47" id="iqb-D9-xXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="IEa-Fy-1V7" secondAttribute="trailing" constant="8" id="kHw-Fl-dgO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ai5-wm-Jna" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q1h-CQ-DtE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ai5-wm-Jna" secondAttribute="bottom" constant="30" id="iRI-sC-KzK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="sampleButton" destination="IEa-Fy-1V7" id="nSl-6Y-QWN"/>
+                        <outlet property="sampleLabel" destination="UeP-23-rg1" id="diG-PZ-7Nf"/>
+                        <outlet property="sampleView" destination="ai5-wm-Jna" id="lPS-ld-Cpn"/>
+                        <outlet property="smapleTextfield" destination="Now-Lh-cjX" id="NfZ-ta-hTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </scene>
     </scenes>
 </document>
